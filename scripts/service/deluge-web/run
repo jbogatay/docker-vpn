@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sv start openvpn || exit 1
+sv start deluged || exit 1
+sleep 5
+# start up openvpn
+exec /sbin/setuser torrents /usr/bin/deluge-web -c /config/deluge -l /var/log/deluged/deluge-web.log
