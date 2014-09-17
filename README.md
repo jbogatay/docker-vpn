@@ -19,12 +19,15 @@ Setup
 - Edit all the configuration values in Makefile
 
 - Create the image
-      make
+
+        make
 
 - Run the image
-      make run
+ 
+        make run
 
 Other make targets
+-------
 
 |Parameter|Description|
 |---------|-----------|
