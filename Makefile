@@ -60,6 +60,7 @@ configure:
 	sed -i 's#^ip route.*$$#ip route add ${HOST_SUBNET} via ${DOCKER_GW}#' scripts/startup/static_route.sh
 	sed -i 's#--gid\s\+[0-9]\+\s#--gid ${TORRENT_GID} #' Dockerfile
 	sed -i 's#--uid\s\+[0-9]\+\s#--uid ${TORRENT_UID} #' Dockerfile
+	if [ ! -f config/openvpn/pia_client ]; then head -n 100 /dev/urandom | md5sum | tr -d " -" > config/openvpn/pia_client; fi;
 
 
 run:	stop
