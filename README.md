@@ -26,6 +26,11 @@ Setup
  
         make run
 
+  or, as part of the make process, start_container.sh and start_container_shell.sh are created, you can use either of those to run the container
+
+        sudo ./start_container.sh
+        sudo ./start_container_shell.sh
+
 Other make targets
 -------
 
@@ -37,6 +42,8 @@ Other make targets
 |stop|stop and remove any existing/running vpn containers|
 |shell|start new container and all services with a shell prompt.  Container will be stopped and removed on exit|
 |clean|remove image|
+|startcmds|create start_container.sh and start_interactive_container.sh|
+
 
 First Run
 -------
