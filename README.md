@@ -16,7 +16,9 @@ Features
 
 Setup
 -------
-- Edit all the configuration values in Makefile
+- Copy or move Makevars-TEMPLATE to Makevars
+
+- Edit all the configuration values in Makevars
 
 - Create the image
 
