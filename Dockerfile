@@ -51,3 +51,7 @@ ADD scripts/startup/ /etc/my_init.d/
 # Add services
 ADD scripts/service/ /etc/service/
 
+# Make sure scripts and services are executable
+RUN find /etc/service/ -name run -exec chmod +x {} \;   &&\
+    find /etc/my_init.d/* -exec chmod +x {} \;
+
