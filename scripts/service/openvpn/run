@@ -2,4 +2,4 @@
 
 
 # start up openvpn
-exec /usr/sbin/openvpn --cd /config/openvpn --config /config/openvpn/default.conf --redirect-gateway --log /var/log/openvpn.log
+exec /usr/sbin/openvpn --cd /config/openvpn --config /config/openvpn/default.conf --redirect-gateway

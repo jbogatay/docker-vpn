@@ -3,4 +3,4 @@
 sv start openvpn || exit 1
 sleep 5
 
-exec /sbin/setuser torrents /usr/bin/deluged -c /config/deluge -d -l /var/log/deluged/deluged.log
+exec /sbin/setuser torrents /usr/bin/deluged -c /config/deluge -d --loglevel=info
