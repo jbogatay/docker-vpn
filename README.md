@@ -1,3 +1,9 @@
+NOTICE
+======
+This project has been replaced with https://github.com/jbogatay/docker-piavpn.   The new project is a trusted build will all configuration taking place via environment variables.  No need to build yourself anymore.   Nothing baked in.
+
+-----
+
 A dockerfile with openvpn, [privateinternetaccess.com](https://www.privateinternetaccess.com/) port forward script, deluged, deluge-web, and a socks proxy.
 
 Requirements
